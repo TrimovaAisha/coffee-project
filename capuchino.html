@@ -1,0 +1,247 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Кофейный магазин</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-left: 20px;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 25px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #353332;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 5px 0;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #292626;
+    }
+
+    .pink-header {
+      background-color:rgb(212, 161, 161);
+      padding: 15px 50px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .pink-header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      letter-spacing: 0.5px;
+    }
+
+    .coffee-title {
+      padding: 10px 50px 0; 
+      font-size: 24px;
+      color: #333;
+      margin: 0;
+      margin-top: 20px;
+    }
+
+    .main-content {
+      display: flex;
+      padding: 5px 50px 20px; 
+      gap: 40px;
+    }
+
+    .coffee-image {
+      height: 250px;
+      width: 250px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .description-content {
+      flex: 1;
+      margin-top: 5px;
+    }
+
+    .description-content h3 {
+      padding: 10px;
+      margin: 0;
+      font-size: 26px;
+      color: #333;
+    }
+
+    .description-content p {
+      margin:10px;
+      font-size: 20px;
+    }
+
+    .ingredients-list {
+      list-style-type:disc;
+      padding-left: 10px;
+      margin-top: 10px;
+    }
+
+    .ingredients-list li {
+      display: list-item;
+      margin-bottom: 8px;
+      margin-left: 0;
+      font-size: 18px;
+    }
+
+    footer {
+      background-color:rgb(212, 161, 161);
+      color: rgb(255, 255, 255);
+      padding: 60px 60px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <nav>
+      <ul>
+         <li><a href="main.html">Главная</a></li>
+        <li><a href="coffee.html">Меню</a></li>
+        <li><a href="About_us.html">О нас</a></li>
+        <li><a href="Articles.html">Статьи</a></li>
+        <li><a href="Developers.html">Разработчики</a></li>
+      </ul>
+    </nav>
+    
+    <div class="pink-header">
+      <h1>Карта вкусов: Tumar</h1>
+    </div>
+    
+    <h1 class="coffee-title">Капучино</h1>
+    
+    <div class="main-content">
+      <img src="cappuchino.PNG" alt="capuchino" class="coffee-image">
+      
+      <div class="description-content">
+        <h3>Описание</h3>
+        <p>Капучино состоит из:</p>
+        <ul class="ingredients-list">
+          <li>Эспрессо 1/3</li>
+          <li>Горячее молоко 1/3</li>
+          <li>Молочная пенка 1/3</li>
+        </ul>
+      </div>
+    </div>
+
+<style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                text-align: center;
+            }
+
+            td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                vertical-align: top;
+                width: 25%;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .product-title {
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            .price {
+                color: green;
+                margin-top: 5px;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            a:hover {
+                color: rgb(39, 4, 4);
+            }
+
+            h2 {
+                text-align: center;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-top: 20px;
+                margin-bottom: 25px;
+                font-size:22px;
+            }
+            table{
+                margin-bottom: 100px;
+            }
+        </style>
+
+        <h2>Так же предлагаем вам</h2>
+
+        <table>
+            <tr>
+                <td>
+                    <a href="icelatte.html">
+                        <img src="icelatte.png" alt="Айс Латте"><br>
+                        <div class="product-title">Айс Латте</div>
+                        <div class="price">1200 ₸</div>
+                    </a>
+                </td>
+                <td>
+                    <a href="matcha.html">
+                        <img src="matcha.PNG" alt="Матча"><br>
+                        <div class="product-title">Матча</div>
+                        <div class="price">1400 ₸</div>                
+                    </a>
+                </td>
+                <td>
+                    <a href="bobatea.html">
+                        <img src="bubbletea.PNG" alt="Бабл-ти"><br>
+                        <div class="product-title">Бабл-ти</div>
+                        <div class="price">1600 ₸</div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h3>Контакты</h3>
+          <p>+7 700 423 7504<br>+7 700 123 7504</p>
+          <p>г.Астана, Мангилик ел 16а</p>
+          <p>Email: tumar@gmail.com</p>
+          <p>Instagram: tumar</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
